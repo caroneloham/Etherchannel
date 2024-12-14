@@ -73,30 +73,21 @@ Consultez le dossier `doc/` pour obtenir des instructions détaillées sur :
 
 ---
 
-## 👑 **Exemples de Scénarios**
+## 💪 **Stratégies de Haute Disponibilité**
 
-- **Basculement de lien EtherChannel** : Simuler la défaillance d’un lien dans l’agrégat pour vérifier la continuité du service.
-- **Test HSRP** : Mettre hors service le routeur primaire et observer la prise de relais par le routeur de secours.
-- **Optimisation du Routage** : Coupler HSRP avec des protocoles de routage dynamiques pour une redondance accrue.
-
----
-
-## 🛠️ **Bonnes Pratiques**
-
-- Utiliser des versions logicielles à jour sur les équipements.
-- Déployer plusieurs liens agrégés pour répartir la charge et limiter les points de défaillance uniques.
-- Tester régulièrement les scénarios de basculement.
-- Documenter toutes les modifications de configuration et conserver des sauvegardes.
+- **Redondance Matérielle** : Utilisez des commutateurs et routeurs redondants pour éliminer les points de défaillance uniques.
+- **Multiplexage de Liens** : Implémentez EtherChannel pour combiner plusieurs liens physiques et assurer une meilleure résilience.
+- **Basculement Automatique** : Configurez HSRP pour permettre le basculement automatique des passerelles par défaut.
+- **Surveillance Continue** : Utilisez des outils de monitoring pour suivre l’état des liaisons et des équipements afin d’anticiper les pannes.
 
 ---
 
-## 💌 **Support & Contributions**
+## 🐟 **Optimisation de la Résilience**
 
-Pour toute question, proposition d’amélioration ou contribution :
-
-- Créez une **issue** sur GitHub.
-- Envoyez une **pull request** avec vos modifications.
-- Contactez **votre_nom_utilisateur** via GitHub.
+- **Load Balancing** : Répartissez le trafic à travers plusieurs liens pour éviter la congestion.
+- **Préemption HSRP** : Activez la préemption pour assurer que le routeur principal reprend son rôle après un basculement.
+- **STP (Spanning Tree Protocol)** : Configurez STP pour éviter les boucles et assurer la redondance des chemins de commutation.
+- **Maintenance Planifiée** : Planifiez des fenêtres de maintenance pour tester les basculements et maintenir la performance du réseau.
 
 ---
 
